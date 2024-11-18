@@ -26,11 +26,11 @@ class ProductService {
     } on DioException catch (e) {
       if (e.response?.statusCode == 500) {
         // log('Server error: ${e.message}', name: 'save education info error');
-        log('Exception: ${e.toString()}', name: 'aimcet result error');
+        log('Exception: ${e.toString()}', name: ' result error');
         throw SnackbarPopUps.popUpB(
             'Error fetching data...Please try after sometime');
       } else {
-        log('Exception: ${e.toString()}', name: 'aimcet result error');
+        log('Exception: ${e.toString()}', name: ' result error');
         throw SnackbarPopUps.popUpB(
             'Error fetching data...Please try after sometime');
       }
